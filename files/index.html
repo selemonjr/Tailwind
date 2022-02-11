@@ -3,18 +3,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TailwindCss</title>
 </head>
 <body>
-    <header>
-       <div class="p-2 grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
-           <div class="video h-36 w-60 bg-gray-200">Video</div>
-           <div  class="video h-36 w-60 bg-gray-200">Video</div>
-           <div  class="video h-36 w-60 bg-gray-200">Video</div>
-           <div  class="video h-36 w-60 bg-gray-200">Video</div>
-           <div  class="video h-36 w-60 bg-gray-200">Video</div>
-           <div  class="video h-36 w-60 bg-gray-200">Video</div>
+    <header class="h-full w-full bg-gray-50">
+       <div class="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 pt-10 text-center">
+           <div class="video  h-full w-72 bg-gray-200 md:order-2 drop-shadow-md border border-sky-500 bg-gray-700 rounded-md shadow-md shadow-sky-300/50">
+               <div class="w-full h-full">
+                <div class="pt-5 items-center mb-3">
+                   <h3 class="text-white font-bold">COMPLETE PACKAGE</h3>
+                  <div class="flex justify-center items-center">
+                    <h3 class="text-gray-500 line-through font-bold text-md mr-3">$447</h3>
+                    <h1 class="text-sky-500 font-bold text-4xl">$249</h1>
+                    <h3 class="text-white font-bold text-md ml-3">USD</h3>
+                  </div>
+                </div>
+                  <div class="flex ml-5 w-full h-10 items-center "><i class='bx bx-check text-sky-500 font-bold text-md'></i><p class="ml-1 text-white font-bold">All application UI components</p></div>
+                  <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-sky-500 font-bold text-md'></i> <p class="ml-1 text-white font-bold ">All marketing components</p></div>
+                  <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-sky-500 font-bold text-md'></i> <p class="ml-1 text-white font-bold">All ecommerce components</p></div>
+                  <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-sky-500 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Lifetime Accress</p></div>
+                  <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-sky-500 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Use on unlimited projects</p></div>
+                  <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-sky-500 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Free updated</p></div>
+                  <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-sky-500 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Community Access</p></div>
+                  <button class="w-60 py-2 text-center bg-sky-500 text-white mb-4 rounded-md mt-2">Get Package</button>
+               </div>
+           </div>
+
+
+           <div class="video h-full w-72 bg-gray-200 md:order-1 border border-sky-500 bg-gray-700 rounded-md">
+            <div class="w-full h-full">
+             <div class="pt-5 items-center mb-3">
+                <h3 class="text-white font-bold">APPLICATION UI</h3>
+                <div class="flex justify-center items-center">
+                    <h1 class="text-sky-500 font-bold text-4xl">$149</h1>
+                    <h3 class="text-white font-bold text-md ml-3">USD</h3>
+                  </div>
+             </div>
+               <div class="flex ml-5 w-full h-10 items-center "><i class='bx bx-check text-gray-400 font-bold text-md'></i><p class="ml-1 text-white font-bold">All application UI components</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Lifetime Accress</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Use on unlimited projects</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Free updated</p></div>
+               <div class="flex w-full h-10 items-center ml-5 mb-20 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Community Access</p></div>
+               <button class="w-60 py-2 text-center bg-sky-500 text-white mb-4 rounded-md mt-2">Get Package</button>
+            </div>
+        </div>
+
+        <div class="video h-full w-72 bg-gray-200 md:order-3 border border-sky-500 bg-gray-700 rounded-md">
+            <div class="w-full h-full">
+             <div class="pt-5 items-center mb-3">
+                <h3 class="text-white font-bold">MARKETING</h3>
+                <div class="flex justify-center items-center">
+                    <h1 class="text-sky-500 font-bold text-4xl">$210</h1>
+                    <h3 class="text-white font-bold text-md ml-3">USD</h3>
+                  </div>
+             </div>
+               <div class="flex ml-5 w-full h-10 items-center "><i class='bx bx-check text-gray-400 font-bold text-md'></i><p class="ml-1 text-white font-bold">All application UI components</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold ">All marketing components</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Lifetime Accress</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Use on unlimited projects</p></div>
+               <div class="flex w-full h-10 items-center ml-5 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Free updated</p></div>
+               <div class="flex w-full h-10 items-center ml-5 mb-12 "><i class='bx bx-check text-gray-400 font-bold text-md'></i> <p class="ml-1 text-white font-bold">Community Access</p></div>
+               <button class="w-60 py-2 text-center bg-sky-500 text-white mb-4 rounded-md mt-2">Get Package</button>
+            </div>
+        </div>
+
        </div>
     </header>
 </body>
